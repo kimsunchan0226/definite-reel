@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.inner { max-width: 1140px; margin: 0 auto;}
+
+/* 헤더구역 시작 */
+#header div { position: relative;}
+#nav { position: absolute; top: 0; right: 0;} 
+#nav .depth1 > li { float: left; margin: 0px;
+    padding: 0px 24px;  vertical-align: middle;
+}
+#nav .depth1 > li a { text-align: center; vertical-align: middle;
+    height: 80px; font-size: 1.1em; font-weight: 600; margin: 10px;
+   
+ }
