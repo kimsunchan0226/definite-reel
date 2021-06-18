@@ -133,9 +133,18 @@
 }
 #main .grid a:hover { background-color: rgba(101,171,126, 1);}
 
-
-
-
+#main .meun .inner > div { float: left; width: 33.3333%;}
+#main .marketing div { float: left; width: 30%;
+    border: 1px solid #000; border: 6px; text-align: center; display: block;
+}
+#main .marketing p { float: left; width: 70%;}
+#main .latest h4 { float: left; width: 30%; }
+#main .latest span { float: left; width: 70%; padding-left: 240px;}
+#main .latest span::before { content: ''; height: 1px; width: 100%; background-color: #666;}
+#main .latest ul > li { float: left; width: 33.3333%; padding: 20px 8px;
+     overflow: hidden;
+}
+#main .latest ul > li img { border-radius: 10px;}
 
 .pro { 
      position: fixed; top: 100px; right: 100px;
