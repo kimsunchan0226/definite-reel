@@ -7,16 +7,15 @@
     /* border: 1px solid red; */
 }
 #header h1 { padding: 25px 0;}
-#nav { position: absolute; top: 40px; right: 0; 
-    border: 1px solid #000;
+#nav { position: absolute; top: 40px; right: 0;
 } 
 #nav .depth1 > li { float: left; margin: 0px;
-    padding: 0px 24px 30px; position: relative;
+    padding: 0px 24px 30px; position: relative; z-index: 999;
 }
 #nav .depth1 > li > a { text-align: center;
    font-size: 16.5px; font-weight: 600;
  }
-#nav .depth2 { position: absolute; top: 100%; left: 0; background-color: red;
+#nav .depth2 { position: absolute; top: 100%; left: 0; background-color: #fff;
     width: 100%; display: none;
     
 }
@@ -43,7 +42,7 @@
     height: 100%; 
 }
 #main .kim .park { position: absolute;
-    top: 50%; left: 0; width: 100%;
+    top: 40%; left: 0; width: 100%;
     transform: translate(0, -50%);
     text-align: center;
 }
@@ -106,7 +105,7 @@
     padding-bottom: 20px; padding-top: 50px;
     position: relative;
 }
-#main .container .breaking h3::after { content: ''; height: 2px;
+#main .container h3::after { content: ''; height: 2px;
     width: 16%; background-color: #bbb; bottom: 0; left: 158px; position: absolute;
  }
 #main .container p { font-size: 15px; color: #666; margin-top: 20px;}
@@ -121,7 +120,7 @@
 #main .grid { background-color:#00000033;
     text-align: center;
 }
-#main .grid h2 { font-size: 30px; color: #fff; padding-top: 100px;}
+#main .grid h2 { font-size: 30px; color: #fff; padding-top: 90px;}
 #main .grid p { font-size: 15px; color: #fff; margin: 20px 0;}
 #main .grid a { font-size: 15px; color: #fff;
     border: 1px solid transparent; text-align: center;
@@ -132,24 +131,70 @@
     padding: 8px 30px;
 }
 #main .grid a:hover { background-color: rgba(101,171,126, 1);}
-
-#main .meun .inner > div { float: left; width: 33.3333%;}
-#main .marketing div { float: left; width: 30%;
-    border: 1px solid #000; border: 6px; text-align: center; display: block;
+#main .meun { padding: 20px 0;}
+#main .meun .inner > div { float: left; width: 32%;}
+#main .marketing h4 { padding: 15px 0 ;font-size: 25px; }
+#main .marketing div { float: left; width: 28%;
+    border: 1px solid #000; text-align: center; display: block;
+    padding: 20px ; display: block;
+    margin: 20px 2% 10px 0 ;
+    font-size: 40px;
 }
-#main .marketing p { float: left; width: 70%;}
-#main .latest h4 { float: left; width: 30%; }
-#main .latest span { float: left; width: 70%; padding-left: 240px;}
-#main .latest span::before { content: ''; height: 1px; width: 100%; background-color: #666;}
+#main .marketing p { float: right; width: 69%; padding: 10px 0;  font-size: 20px;}
+#main .latest { position: relative; margin: 0 2%;}
+#main .latest span { position: absolute; top:30px; right: 0;}
+#main .latest h4 { border-bottom: 1px solid #000; padding: 20px 0; font-size: 25px;}
 #main .latest ul > li { float: left; width: 33.3333%; padding: 20px 8px;
      overflow: hidden;
 }
 #main .latest ul > li img { border-radius: 10px;}
-
+#main .notice .youtube {width: 100%; padding-top: 55%;
+    position: relative;}
+#main .notice .youtube iframe { position: absolute; top: 0; left: 20px;}
 .pro { 
      position: fixed; top: 100px; right: 100px;
      animation: kim 1s infinite alternate ease-in-out; 
  }
+ /* 푸터구역 */
+ #footer { 
+    background-color: #333;
+    font-size: 12px; line-height: 18px;
+    padding: 30px 0px; text-align: center;
+    color: #ddd;
+}
+#footer .sns a { font-size: 14px; 
+    display: inline-block; width: 32px; height: 32px;
+    line-height: 32px; background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%; 
+    margin: 0 5px; transition: all 0.3s;
+}
+#footer .sns a:hover { background-color: rgba(255, 255, 255, 0.3);}
+#footer address { font-style: normal;}
+#footer .info { padding:20px 0px }
+#footer .info span { padding:5px 20px; }
+#footer .privacy > a,
+#footer .privacy > span { 
+    font-size: 11px; padding: 3px 10px;
+    display: inline-block; border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #bbb; transition: all 0.4s; 
+}
+#footer .privacy > a:hover,
+#footer .privacy > span:hover { 
+    background-color: #999;
+    border: 1px solid #999;
+    color: #fff;
+}
+#footer .fam ul {
+    position:absolute;
+    bottom:100%; left:0;
+    width:100%; padding:5px;
+    background:#fff;
+    color:#000;
+    display:none;
+}
+#footer .fam { position:relative; 
+    cursor:pointer }
+
  @keyframes kim { 
      0% { transform: translateY(0px);}
      100% { transform: translateY(20px);}
