@@ -6,11 +6,11 @@
 #header .inner { position: relative; 
     /* border: 1px solid red; */
 }
-#header h1 { padding: 25px 0;}
+#header h1 { padding: 30px 0;}
 #nav { position: absolute; top: 40px; right: 0;
 } 
 #nav .depth1 > li { float: left; margin: 0px;
-    padding: 0px 24px 30px; position: relative; z-index: 999;
+    padding: 10px 24px 30px; position: relative; z-index: 999;
 }
 #nav .depth1 > li > a { text-align: center;
    font-size: 16.5px; font-weight: 600;
@@ -26,6 +26,11 @@
     line-height: 50px;
     font-size: 12.75px; 
 } 
+#header .membership { position: absolute; top: 0; right: 0; background-color: #777;
+    width: 100%; text-align: right; padding:3px 200px 3px 0; color: #fff;
+}
+#header .membership a:first-child { padding-right: 20px;}
+#header { position: relative;}
 /* 헤더구역 끝 */
 
 /* 메인구역 시작 */
